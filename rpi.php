@@ -18,7 +18,7 @@ $bdd = mysql_pdo_connect();
 			<?php
 			$matches = array();
 			$in_str = exec('ls -l /var/run/nginx.pid');
-			$pattern = '/([A-Z][a-zA-Z0-9.]+)[ ]([0-9]+)[ ]([0-9:]+)/';
+			$pattern = '/([A-Z][a-zA-Z0-9.]+)[ ]*([0-9]+)[ ]([0-9:]+)/';
 			preg_match($pattern, $in_str, $matches);
 			
 			$_month = $matches[1];
