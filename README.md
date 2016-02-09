@@ -22,4 +22,5 @@ INSTALLATION
 
 * Copy and paste the file in the adm folder of a valid pweb installation;
 * Add a link in the menu (adm/menu.php) if you want;
-* Access page from the administation board as any other page (/adm/rpi)
+* Access page from the administation board as any other page (/adm/rpi);
+* Make sure the user www-data is in the video group.
